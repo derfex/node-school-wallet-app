@@ -1,4 +1,5 @@
 'use strict';
+const config = require('./config.json');
 
 const express = require('express');
 const app = express();
@@ -31,6 +32,6 @@ app.get('/transfer', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('YM Node School App listening on port 3000!');
+app.listen(config.PORT, () => {
+    console.log('YM Node School App listening on port ' + config.PORT + '!');
 });
