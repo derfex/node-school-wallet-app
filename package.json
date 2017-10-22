@@ -2,9 +2,9 @@
   "name": "node-school-wallet-app",
   "version": "1.0.0",
   "description": "Приложение школы Node.js «Кошелёк»",
-  "author": "",
+  "author": "derfex",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_PATH=. node ./source/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
